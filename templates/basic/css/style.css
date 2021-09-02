@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.topMenuRow {
+    height: 30px;
+}
+
+.topRow {
+    --bs-bg-opacity: .3;
+    height: 140px;
+}
+
+.menuRow {
+    height: 60px;
+}
+
+.middleRow {
+    min-height: 400px;
+}
+
+.bottomRow {
+    min-height: 300px;
+    
+}
