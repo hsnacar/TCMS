@@ -1,4 +1,3 @@
-# OYS
 # TCMS (Content Management System from Türkiye)
 
 ## Aktif İlerleme
