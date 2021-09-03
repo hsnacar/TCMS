@@ -1,8 +1,7 @@
 <?php
 
 // *** Daha sonra veritabanından okunacak ayarlar ***
-$defaultTemplate = "basic";
-$defaultLanguage = "tr";
+
 $defaultYear = "2021-2022";
 
 // *** ***
@@ -13,4 +12,4 @@ include LIBRARIES . "/routing.php";
 
 include LIBRARIES . "/class.php";
 
-include LANGUAGES . "/" . $defaultLanguage . "/" . $defaultLanguage . ".php";
+include LANGUAGES . "/" . pageBuild::$language . "/" . pageBuild::$language . ".php";

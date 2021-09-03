@@ -1,7 +1,6 @@
 <!doctype html>
-<html lang="<?php echo $defaultLanguage; ?>">
-<?php $templateFolder = "basic"; ?>
-<?php include TEMPLATES . "/" . $templateFolder . "/head.php"; ?>
-<?php include TEMPLATES . "/" . $templateFolder . "/body.php"; ?>
+<html lang="<?php echo pageBuild::$language; ?>">
+<?php include TEMPLATES . "/" . pageBuild::$theme . "/head.php"; ?>
+<?php include TEMPLATES . "/" . pageBuild::$theme . "/body.php"; ?>
 
 </html>
