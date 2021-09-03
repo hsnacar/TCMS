@@ -21,7 +21,7 @@
 
         <div class="container">
             <div class="row">
-                <?php echo $page->htmlBody; ?>
+                <?php echo pageBuild::$htmlBody; ?>
             </div>
         </div>
     </div>

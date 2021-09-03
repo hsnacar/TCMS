@@ -4,7 +4,7 @@
 $defaultTemplate = "basic";
 $defaultLanguage = "tr";
 $defaultYear = "2021-2022";
-$defaultPage = "homepage";
+
 // *** ***
 
 include "libraries/const.php";
