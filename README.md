@@ -1,11 +1,11 @@
 # TCMS (Content Management System from Türkiye)
 
-## Aktif İlerleme
+## Aktif 
 ```bash
 * Bileşen: Content: Makale veritabanı yapısı ve önyüzde gösterimi
 ```
 
-## Sıradaki İlerlemeler
+## Sıradakiler
 * Admin panelden makale girişi
 * Bileşen: Members: Üye girişi
 * Mod: Menu: Anamenü modülü
