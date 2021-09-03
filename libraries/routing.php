@@ -23,8 +23,13 @@ $urlArray = array_values($urlArray);
 if (strstr($urlArray[0], '.html') == "" && count($urlArray) != 0) {
     routing::$targetComponent = $urlArray[0];
 }
+
 // Eğer ilk eleman bir html sayfa çağrısı ise content bileşenin çağır
 if (strstr($urlArray[0], '.html') != "") {
     routing::$targetComponent = "content";
 }
 
+// Eğer aranan bileşen yoksa homepage bileşenini aç
+if (!file_exists(COMPONENTS . "/" . routing::$targetComponent)) {
+    routing::$targetComponent = "homepage";
+}

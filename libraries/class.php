@@ -12,7 +12,6 @@ class pageBuild
     public static $language = "tr";
 }
 
-
 include COMPONENTS . "/" . routing::$targetComponent . "/head.php";
 include COMPONENTS . "/" . routing::$targetComponent . "/modal.php";
 include COMPONENTS . "/" . routing::$targetComponent . "/controller.php";
