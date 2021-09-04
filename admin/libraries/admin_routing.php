@@ -23,11 +23,6 @@ if (strstr($urlArray[0], '.html') == "" && count($urlArray) != 0) {
     adminRouting::$targetComponent = $urlArray[0];
 }
 
-// Eğer ilk eleman bir html sayfa çağrısı ise content bileşenin çağır
-if (strstr($urlArray[0], '.html') != "") {
-    adminRouting::$targetComponent = "content";
-}
-
 // Eğer aranan bileşen yoksa homepage bileşenini aç
 if (!file_exists(ADMIN_COMPONENTS . "/" . adminRouting::$targetComponent)) {
     adminRouting::$targetComponent = "homepage";
