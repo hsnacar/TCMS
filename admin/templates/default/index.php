@@ -46,11 +46,18 @@
                 </div>
                 <div class="d-flex align-items-end fixed-bottom">
                     <ul class="nav flex-column">
+                        
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/setting/">
-                                <i class="bi bi-gear-fill pe-2"></i>
+                                <i class="bi bi-gear"></i>
                                 <?php echo $lang['settings']; ?>
 
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" target="_blank" href="<?php echo $_SERVER['REQUEST_URI']; ?>">
+                                <i class="bi bi-box-arrow-in-up-right"></i>
+                                <?php echo $lang['website']; ?>
                             </a>
                         </li>
                         <li class="nav-item">
