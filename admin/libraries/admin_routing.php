@@ -27,3 +27,5 @@ if (strstr($urlArray[0], '.html') == "" && count($urlArray) != 0) {
 if (!file_exists(ADMIN_COMPONENTS . "/" . adminRouting::$targetComponent)) {
     adminRouting::$targetComponent = "homepage";
 }
+
+// echo "<br>target component: ".adminRouting::$targetComponent;

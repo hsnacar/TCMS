@@ -1,3 +1,4 @@
+
 <?php
 
 class adminDbase
@@ -6,11 +7,13 @@ class adminDbase
 
 class adminPageBuild
 {
+    public static $baseFolder = "/admin";
     public static $htmlHead = "";
     public static $htmlBody = "";
     public static $theme = "default";
     public static $language = "tr";
 }
+
 
 include ADMIN_COMPONENTS . "/" . adminRouting::$targetComponent . "/head.php";
 include ADMIN_COMPONENTS . "/" . adminRouting::$targetComponent . "/modal.php";

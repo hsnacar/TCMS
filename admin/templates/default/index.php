@@ -18,23 +18,26 @@
                     <a href="#">Logo</a>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Makaleler</a>
+                            <a class="nav-link" href="<?php echo dirname($_SERVER['SCRIPT_NAME']);?>">Giriş</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="<?php echo dirname($_SERVER['SCRIPT_NAME']);?>/content/">Makaleler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Link</a>
                         </li>
                     </ul>
                 </div>
                 <div class="d-flex align-items-end fixed-bottom">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="">
                                 <i class="bi bi-gear-fill pe-2"></i>
                                 Ayarlar
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
+                            <a class="nav-link text-white" href="">
                                 <i class="bi bi-box-arrow-left pe-2"></i>
                                 Çıkış
                             </a>
