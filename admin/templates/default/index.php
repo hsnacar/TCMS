@@ -7,24 +7,31 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    
+
 </head>
 
 <body>
     <div class="h-100 w-100 d-inline-block">
         <div class="d-flex h-100">
-            <div class="bg-dark h-100">
+            <div class="bg-secondary h-100">
                 <div class="d-flex align-items-start">
-                    <a href="#">Logo</a>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo dirname($_SERVER['SCRIPT_NAME']);?>">Giriş</a>
+                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>">
+                                <i class="bi bi-house"></i>
+                                Giriş</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo dirname($_SERVER['SCRIPT_NAME']);?>/content/">Makaleler</a>
+                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/content/">
+                                <i class="bi bi-file-text"></i>
+                                Makaleler
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Link</a>
+                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/member/">
+                                <i class="bi bi-people"></i>
+                                Üyeler
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -45,10 +52,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="bg-secondary flex-grow-1">
-                <div class="w-100 bg-dark p-2 text-white">
-                    menü
-                </div>
+            <div class="bg-light flex-grow-1">
+
+                <?php echo adminPageBuild::$htmlBody; ?>
+
             </div>
         </div>
     </div>
