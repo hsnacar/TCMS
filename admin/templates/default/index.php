@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <?php echo adminPageBuild::$htmlHead; ?>
-
 </head>
 
 <body>
@@ -20,25 +19,27 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>">
                                 <i class="bi bi-house"></i>
-                                Anasayfa
+                                <?php echo $lang['homepage']; ?>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/content/">
                                 <i class="bi bi-file-text"></i>
-                                Makaleler
+                                <?php echo $lang['articles']; ?>
+
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/category/">
-                                <i class="bi bi-file-text"></i>
-                                Kategoriler
+                                <i class="bi bi-folder"></i>
+                                <?php echo $lang['categories']; ?>
+
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/member/">
                                 <i class="bi bi-people"></i>
-                                Üyeler
+                                <?php echo $lang['members']; ?>
                             </a>
                         </li>
                     </ul>
@@ -48,13 +49,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/setting/">
                                 <i class="bi bi-gear-fill pe-2"></i>
-                                Ayarlar
+                                <?php echo $lang['settings']; ?>
+
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="">
                                 <i class="bi bi-box-arrow-left pe-2"></i>
-                                Çıkış
+                                <?php echo $lang['logout']; ?>
                             </a>
                         </li>
                     </ul>
