@@ -30,6 +30,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/category/">
+                                <i class="bi bi-file-text"></i>
+                                Kategoriler
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/member/">
                                 <i class="bi bi-people"></i>
                                 Üyeler

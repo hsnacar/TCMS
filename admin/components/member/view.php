@@ -1,3 +1,3 @@
 <?php
 
-adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . "member view.php";
+adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . "";
