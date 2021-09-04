@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <?php echo adminPageBuild::$htmlHead; ?>
 
 </head>
 
@@ -19,7 +20,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>">
                                 <i class="bi bi-house"></i>
-                                Giriş</a>
+                                Anasayfa
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/content/">
@@ -38,7 +40,7 @@
                 <div class="d-flex align-items-end fixed-bottom">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="">
+                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/setting/">
                                 <i class="bi bi-gear-fill pe-2"></i>
                                 Ayarlar
                             </a>
