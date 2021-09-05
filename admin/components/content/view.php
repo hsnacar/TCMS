@@ -2,7 +2,7 @@
 
 adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . '<div class="pageTitle">';
 
-adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . '<h4 class="d-inline">' . $lang['articles'] . '</h5>';
+adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . '<h5 class="d-inline">' . $lang['articles'] . '</h5>';
 
 adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . '<div class="contentButtons d-inline float-end">
 
