@@ -14,6 +14,11 @@ $lang['publish'] = 'Yayınla';
 $lang['unpublish'] = 'Kaldır';
 
 $lang['articlesNew'] = 'Yeni Makale';
+$lang['articlesSave'] = 'Kaydet';
+$lang['articlesSaveClose'] = 'Kaydet&Kapat';
+$lang['articlesCancel'] = 'İptal';
+
+$lang['articleTitle'] = 'Başlık';
 
 
 

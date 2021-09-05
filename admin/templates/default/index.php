@@ -11,68 +11,68 @@
 </head>
 
 <body>
-    <div class="h-100 w-100 d-inline-block">
-        <div class="d-flex h-100">
-            <div class="bg-secondary h-100">
-                <div class="d-flex align-items-start">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>">
-                                <i class="bi bi-house"></i>
-                                <?php echo $lang['homepage']; ?>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/content/">
-                                <i class="bi bi-file-text"></i>
-                                <?php echo $lang['articles']; ?>
+    <div class="d-inline-block h-100 w-100">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1 bg-dark">
+                    <div class="d-flex align-items-start">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>">
+                                    <i class="bi bi-house"></i>
+                                    <?php echo $lang['homepage']; ?>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/content/">
+                                    <i class="bi bi-file-text"></i>
+                                    <?php echo $lang['articles']; ?>
 
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/category/">
-                                <i class="bi bi-folder"></i>
-                                <?php echo $lang['categories']; ?>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/category/">
+                                    <i class="bi bi-folder"></i>
+                                    <?php echo $lang['categories']; ?>
 
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/member/">
-                                <i class="bi bi-people"></i>
-                                <?php echo $lang['members']; ?>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/member/">
+                                    <i class="bi bi-people"></i>
+                                    <?php echo $lang['members']; ?>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-end fixed-bottom">
+                        <ul class="nav flex-column">
+
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/setting/">
+                                    <i class="bi bi-gear"></i>
+                                    <?php echo $lang['settings']; ?>
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" target="_blank" href="<?php echo $_SERVER['REQUEST_URI']; ?>">
+                                    <i class="bi bi-box-arrow-in-up-right"></i>
+                                    <?php echo $lang['website']; ?>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="">
+                                    <i class="bi bi-box-arrow-left pe-2"></i>
+                                    <?php echo $lang['logout']; ?>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="d-flex align-items-end fixed-bottom">
-                    <ul class="nav flex-column">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>/setting/">
-                                <i class="bi bi-gear"></i>
-                                <?php echo $lang['settings']; ?>
-
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" target="_blank" href="<?php echo $_SERVER['REQUEST_URI']; ?>">
-                                <i class="bi bi-box-arrow-in-up-right"></i>
-                                <?php echo $lang['website']; ?>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="">
-                                <i class="bi bi-box-arrow-left pe-2"></i>
-                                <?php echo $lang['logout']; ?>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-2 col-sm-10 col-md-10 col-lg-10 col-xl-11 col-xxl-11 h-100 d-flex flex-column">
+                    <?php echo adminPageBuild::$htmlBody; ?>
                 </div>
-            </div>
-            <div class="bg-light flex-grow-1">
-
-                <?php echo adminPageBuild::$htmlBody; ?>
-
             </div>
         </div>
     </div>
