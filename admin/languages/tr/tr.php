@@ -13,3 +13,8 @@ $lang['delete'] = 'Sil';
 $lang['publish'] = 'Yayınla';
 $lang['unpublish'] = 'Kaldır';
 
+$lang['articlesNew'] = 'Yeni Makale';
+
+
+
+

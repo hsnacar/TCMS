@@ -3,6 +3,7 @@
 class adminRouting
 {
     public static $targetComponent = "homepage";
+    public static $urlArray;
 
     public static function urlParse()
     {
@@ -10,22 +11,21 @@ class adminRouting
     }
 }
 // Çağrılan adresin parçalanması ve diziye aktarılması
-$urlArray = explode("/", adminRouting::urlParse());
+adminRouting::$urlArray = explode("/", adminRouting::urlParse());
 
 // Dizideki boş elemanların temizlesi
-$urlArray = array_filter($urlArray);
+adminRouting::$urlArray = array_filter(adminRouting::$urlArray);
 
 // Dizinin yeniden indekslenmesi
-$urlArray = array_values($urlArray);
+adminRouting::$urlArray = array_values(adminRouting::$urlArray);
 
 // Eğer ilk eleman bir html sayfa çağrısı değilse ve kök dizin çağrısı değilse bileşeni eşitle
-if (strstr($urlArray[0], '.html') == "" && count($urlArray) != 0) {
-    adminRouting::$targetComponent = $urlArray[0];
+if (strstr(adminRouting::$urlArray[0], '.html') == "" && count(adminRouting::$urlArray) != 0) {
+    adminRouting::$targetComponent = adminRouting::$urlArray[0];
 }
 
 // Eğer aranan bileşen yoksa homepage bileşenini aç
 if (!file_exists(ADMIN_COMPONENTS . "/" . adminRouting::$targetComponent)) {
     adminRouting::$targetComponent = "homepage";
 }
-
 // echo "<br>target component: ".adminRouting::$targetComponent;
