@@ -15,7 +15,7 @@
     <div class="d-inline-block h-100 w-100">
         <div class="container-fluid h-100">
             <div class="row h-100">
-                <div class="col-2 col-xxl-1 bg-dark" id="mainSection">
+                <div class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-1 bg-dark">
                     <div class="d-flex align-items-start">
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -71,7 +71,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-10 col-xxl-11 h-100 d-flex flex-column" style="border-bottom: 1px solid #DDDDDD;">
+                <div class="col-8 col-sm-8 col-md-9 col-lg-10 col-xl-10 col-xxl-11 h-100 d-flex flex-column">
                     <?php echo adminPageBuild::$htmlBody; ?>
                 </div>
             </div>
