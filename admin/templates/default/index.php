@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?php echo dirname($_SERVER['SCRIPT_NAME']) .'/'. ADMIN_TEMPLATES; ?>/default/css/style.css">
     <?php echo adminPageBuild::$htmlHead; ?>
 </head>
 
@@ -14,7 +15,7 @@
     <div class="d-inline-block h-100 w-100">
         <div class="container-fluid h-100">
             <div class="row h-100">
-                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-1 col-xxl-1 bg-dark">
+                <div class="col-2 col-xxl-1 bg-dark" id="mainSection">
                     <div class="d-flex align-items-start">
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -70,12 +71,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-2 col-sm-10 col-md-10 col-lg-10 col-xl-11 col-xxl-11 h-100 d-flex flex-column">
+                <div class="col-10 col-xxl-11 h-100 d-flex flex-column" style="border-bottom: 1px solid #DDDDDD;">
                     <?php echo adminPageBuild::$htmlBody; ?>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>
