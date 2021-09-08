@@ -20,6 +20,7 @@ $lang['articlesCancel'] = 'İptal';
 
 $lang['articleTitle'] = 'Makale Başlığı';
 $lang['articleBody'] = 'Makale İçeriği';
+$lang['articleSelectCategory'] = "Kategori Seçiniz";
 
 
 

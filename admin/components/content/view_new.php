@@ -16,7 +16,7 @@ adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . '
                 ' . $lang['articlesSaveClose'] . '
             </button>
 
-            <button type="button" class="btn btn-outline-danger">
+            <button type="button" onclick="window.location.href =\'' . dirname($_SERVER['SCRIPT_NAME']) . '/content/\'" class="btn btn-outline-danger">
                 <i class="bi bi-dash-circle"></i>
                 ' . $lang['articlesCancel'] . '
             </button>
@@ -37,7 +37,19 @@ adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . '
         </form>
     </div>
     <div class="col-3 newArticleOptions">
-        Category
+
+    <div class="form-check form-switch mb-3">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">' . $lang['publish'] . '</label>
+  </div>
+  
+
+        <select class="form-select" aria-label="' . $lang['articleSelectCategory'] . '">
+            <option selected>' . $lang['articleSelectCategory'] . '</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
     </div>
 </div>
 ';
