@@ -18,7 +18,8 @@ $lang['articlesSave'] = 'Kaydet';
 $lang['articlesSaveClose'] = 'Kaydet&Kapat';
 $lang['articlesCancel'] = 'İptal';
 
-$lang['articleTitle'] = 'Başlık';
+$lang['articleTitle'] = 'Makale Başlığı';
+$lang['articleBody'] = 'Makale İçeriği';
 
 
 

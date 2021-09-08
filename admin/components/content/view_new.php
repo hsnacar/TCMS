@@ -27,11 +27,13 @@ adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . '
 
 adminPageBuild::$htmlBody = adminPageBuild::$htmlBody . '
 <div class="row bg-white flex-grow-1">
-    <div class="col-9 pageBodyArea">
-        <input type="text" class="form-control" placeholder="' . $lang['articleTitle'] . '"
+    <div class="col-9 pageBodyArea" style="background-color: #FFFFE9 !important; display: flex;">
+    <form method="post" style="align-items: stretch; display: flex;
+    flex-direction:column;" class="w-100 m-0 p-0">
+        <input type="text" class="form-control w-100" placeholder="' . $lang['articleTitle'] . '"
             aria-label="' . $lang['articleTitle'] . '">
-        <form method="post">
-            <textarea></textarea>
+            <textarea style="align-items: stretch;" class="flex-grow-1 form-control w-100 mt-2" placeholder="' . $lang['articleBody'] . '"
+            aria-label="' . $lang['articleBody'] . '"></textarea>
         </form>
     </div>
     <div class="col-3 newArticleOptions">
