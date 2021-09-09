@@ -1,3 +1,32 @@
-#mainSection {
-   
+#mainSection {}
+
+#logoT {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    background-color: red;
+    font-weight: bold;
+    padding: 3px 4px;
+    color: white;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#logoCMS {
+    background-color: white;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
+    padding: 3px 5px 3px 3px;
+    color: red;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

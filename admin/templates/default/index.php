@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="<?php echo dirname($_SERVER['SCRIPT_NAME']) .'/'. ADMIN_TEMPLATES; ?>/default/css/style.css">
+    <link rel="stylesheet" href="<?php echo dirname($_SERVER['SCRIPT_NAME']) . '/' . ADMIN_TEMPLATES; ?>/default/css/style.css">
     <?php echo adminPageBuild::$htmlHead; ?>
 </head>
 
@@ -16,8 +16,9 @@
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-2 col-xxl-1 bg-dark">
-                    <div class="d-flex align-items-start">
-                        <ul class="nav flex-column">
+                    <div class="d-flex align-items-start" style="align-items: stretch; display: flex; flex-direction:column;">
+                        <div class="col-12 mt-4" style="text-align: center;"><span id="logoT">T</span><span id="logoCMS"><i>CMS</i></span></div>
+                        <ul class="nav flex-column mt-3">
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="<?php echo dirname($_SERVER['SCRIPT_NAME']); ?>">
                                     <i class="bi bi-house"></i>
@@ -78,4 +79,5 @@
         </div>
     </div>
 </body>
+
 </html>
